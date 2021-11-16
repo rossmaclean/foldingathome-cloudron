@@ -1,0 +1,23 @@
+{
+  "id": "com.mongodb.foldingathome",
+  "title": "Folding@Home",
+  "author": "Ross MacLean <ross@rossmac.co.uk>",
+  "description": "file://docs/DESCRIPTION.md",
+  "icon": "file://docs/icon.png",
+  "changelog": "file://docs/CHANGELOG",
+  "postInstallMessage": "file://docs/POSTINSTALL.md",
+  "tagline": "Together We Are Powerful",
+  "version": "1.0.0",
+  "healthCheckPath": "/",
+  "httpPort": 7396,
+  "addons": {
+    "localstorage": {}
+  },
+  "manifestVersion": 2,
+  "website": "https://foldingathome.org/",
+  "contactEmail": "support@clourdon.io",
+  "tags": [ "folding" ],
+  "documentationUrl": "https://docs.cloudron.io/apps/foldingathome/",
+  "forumUrl": "https://forum.cloudron.io/category/49/foldingathome",
+  "mediaLinks": [ "https://images.rapgenius.com/fd0175ef780e2feefb30055be9f2e022.520x343x1.jpg" ]
+}

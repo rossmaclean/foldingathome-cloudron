@@ -1,0 +1,29 @@
+#!/usr/bin/expect -f
+set timeout 30
+set user ""
+set team "0"
+set pass ""
+set res "2"
+set auto "no"
+
+spawn dpkg -i /fahclient.deb
+
+# Look for user prompt
+expect "*?ser*" 
+send "$user\r"
+
+# Look for team prompt
+expect "*?eam*" 
+send "$team\r"
+
+# Look for passkey prompt
+expect "*?asskey:*"
+send "$pass\r"
+
+# Look for resources prompt
+expect "*?nitially?*"
+send "$res\r"
+
+# Look for auto start prompt
+expect "?es/no]*"
+send "$auto\r"
