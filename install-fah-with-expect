@@ -5,25 +5,26 @@ set team "0"
 set pass ""
 set res "2"
 set auto "no"
+set file [lindex $argv 0]
 
-spawn dpkg -i /fahclient.deb
+spawn dpkg -i --force-depends $file
 
 # Look for user prompt
-expect "*?ser*" 
-send "$user\r"
+#expect "*?ser*"
+#send "$user\r"
 
 # Look for team prompt
-expect "*?eam*" 
-send "$team\r"
+#expect "*?eam*"
+#send "$team\r"
 
 # Look for passkey prompt
-expect "*?asskey:*"
-send "$pass\r"
+#expect "*?asskey:*"
+#send "$pass\r"
 
 # Look for resources prompt
-expect "*?nitially?*"
-send "$res\r"
+#expect "*?nitially?*"
+#send "$res\r"
 
 # Look for auto start prompt
-expect "?es/no]*"
-send "$auto\r"
+#expect "?es/no]*"
+#send "$auto\r"

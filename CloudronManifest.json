@@ -11,7 +11,8 @@
   "healthCheckPath": "/",
   "httpPort": 7396,
   "addons": {
-    "localstorage": {}
+    "localstorage": {},
+    "proxyAuth": { "path": "/" }
   },
   "manifestVersion": 2,
   "website": "https://foldingathome.org/",

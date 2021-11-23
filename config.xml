@@ -1,0 +1,13 @@
+<config>
+    <!-- HTTP Server -->
+    <allow v='127.0.0.1 172.18.0.4'/>
+
+    <!-- Slot Control -->
+    <power v='LIGHT'/>
+
+    <!-- Web Server -->
+    <web-allow v='127.0.0.1 172.18.0.4'/>
+
+    <!-- Folding Slots -->
+    <slot id='0' type='CPU'/>
+</config>
